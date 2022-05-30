@@ -115,13 +115,12 @@ ul {
     background-position: center;
 }
 
-.courses__wrapper {
-    margin-top: 100px;
-}
+.courses__wrapper {}
 
 h2 {
     color: #7df4de;
     padding: 45px 0;
+    margin-top: 0;
 }
 
 .courses__text {
