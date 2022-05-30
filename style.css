@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+.page__body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+}
+
+.header {
+    background-color: #F5F5F5;
+}
+
+.header__wrapper {
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.header__logo {
+    margin-right: 35px;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__item {
+    margin-right: 40px;
+}
+
+.nav__item a {
+    padding: 10px;
+
+}
+
+.nav__item a:hover {
+    outline: 1px solid green;
+    border-radius: 5px;
+    background-color: #ffe17f;
+}
+
+.phone,
+.mail {
+    position: relative;
+    font-size: 18px;
+    padding-left: 45px;
+    display: inline-block;
+}
+
+.phone:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(img/call_black_24dp.svg) no-repeat;
+    left: 15px;
+}
+
+.mail:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(img/mail_black_24dp.svg) no-repeat;
+    left: 15px;
+}
+
+/* ________________MAIN_______________ */
+
+.courses {
+    background: linear-gradient(97deg, #000000 0%, rgba(0, 0, 0, 0) 61%), url('img/biotsa.jpg') no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    background-position: center;
+}
+
+.courses__wrapper {
+    margin-top: 100px;
+}
+
+h2 {
+    color: #7df4de;
+    padding: 45px 0;
+}
+
+.courses__text {
+    color: #fff;
+}
+
+.benefits {
+    text-align: center;
+}
+
+.benefits__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.benefits__item-mod {
+    padding: 170px 20px 20px 20px;
+    min-width: 315px;
+    box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 30%);
+    transition: all .3s ease;
+}
+
+.benefits__item-mod:hover {
+    transform: scale(1.1);
+}
+
+.benefits__item-one {
+    background: url('img/BYN0.jpg') no-repeat top;
+    background-size: contain;
+}
+
+.benefits__item-two {
+    background: url('img/12BYN.jpg') no-repeat top;
+    background-size: contain;
+}
+
+.benefits__item-three {
+    background: url('img/15BYN.jpg') no-repeat top;
+    background-size: contain;
+}
