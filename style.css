@@ -42,22 +42,80 @@ ul {
     /* border: 1px solid black; */
 }
 
-.header {
-    background-color: #F5F5F5;
+.header-top {
+    background-color: #9affff;
 }
 
-.header__wrapper {
+.header-top-wrapper {
     display: flex;
-    padding: 15px 0;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+    justify-content: flex-start;
+    padding: 25px;
+    padding-left: 0;
 }
 
+.tel {
+    position: relative;
+    padding-left: 40px;
+    margin-right: 45px;
+}
 
-.header__logo {
-    margin-right: 35px;
+.tel::before {
+    content: " ";
+    background: url("img/icons/phone.png") no-repeat center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: 10px;
+}
+
+.header-top__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+}
+
+.header-top__socials span {
+    display: none;
+}
+
+.header-top__socials-item1:before {
+    content: url('img/icons/facebook.png');
+}
+
+.header-top__socials-item2:before {
+    content: url('img/icons/twitter.png');
+}
+
+.header-top__socials-item3:before {
+    content: url('img/icons/gplus.png');
+}
+
+.header-top__socials-item4:before {
+    content: url('img/icons/instagramm.png');
+}
+
+@media all and (max-width: 500px) {
+    .header-top-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 25px 10px 25px;
+    }
+
+    .tel {
+        margin-bottom: 25px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .header-top__socials {
+        display: none;
+    }
+
+    .tel {
+        margin: 0;
+    }
 }
 
 .nav__list {
@@ -80,31 +138,23 @@ ul {
     background-color: #ffe17f;
 }
 
-.phone,
+/* .phone,
 .mail {
     position: relative;
-    font-size: 18px;
+    font-size: 22px;
     padding-left: 45px;
     display: inline-block;
-}
+} */
 
-.phone:before {
+/* .phone:before {
     position: absolute;
     content: "";
     width: 30px;
     height: 30px;
     background: url(img/call_black_24dp.svg) no-repeat;
     left: 15px;
-}
+} */
 
-.mail:before {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 30px;
-    background: url(img/mail_black_24dp.svg) no-repeat;
-    left: 15px;
-}
 
 /* ________________MAIN_______________ */
 
@@ -115,12 +165,13 @@ ul {
     background-position: center;
 }
 
-.courses__wrapper {}
+.courses__wrapper {
+    margin-top: 100px;
+}
 
 h2 {
     color: #7df4de;
     padding: 45px 0;
-    margin-top: 0;
 }
 
 .courses__text {
