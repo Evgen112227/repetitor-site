@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 .page__body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.3em;
     color: #000;
     box-sizing: border-box;
 }
@@ -219,40 +218,78 @@ ul {
 /* ________________MAIN_______________ */
 
 .courses {
-    background: linear-gradient(97deg, #000000 0%, rgba(0, 0, 0, 0) 61%), url('img/biotsa.jpg') no-repeat;
+    background: linear-gradient(97deg, #000000 0%, rgba(0, 0, 0, 0) 61%), url('img/main.png') no-repeat;
     background-size: cover;
     min-height: 800px;
     background-position: center;
+    padding: 150px 0 0 0;
 }
 
-.courses__wrapper {}
-
-h2 {
+.courses__wrapper h2 {
     color: #7df4de;
-    padding: 0;
-    margin: 0;
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 50px;
 }
+
 
 .courses__text {
     color: #fff;
+    font-size: 26px;
+    line-height: 21px;
+    font-weight: 100;
+    margin-bottom: 45px;
+
+}
+
+.button {
+    color: #000;
+    border-radius: 11px;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0.1em 1em;
+    line-height: 1.7em;
+    background-image: linear-gradient(177deg, #7df4de 0%, #7df4de 100%);
+    background-color: #7df4de;
 }
 
 .benefits {
     text-align: center;
 }
 
+.benefits__title {
+    color: #e580c1;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 45px 0 45px 0;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 46px;
+}
+
+.benefits__text {
+    color: #0d2d54;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: .1em;
+    line-height: 39px;
+}
+
 .benefits__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 35px;
+    padding: 5px;
 }
 
 .benefits__item-mod {
     padding: 170px 20px 20px 20px;
-    min-width: 315px;
+    max-width: 380px;
     box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 30%);
     transition: all .3s ease;
+    margin-bottom: 20px;
 }
 
 .benefits__item-mod:hover {
@@ -272,4 +309,56 @@ h2 {
 .benefits__item-three {
     background: url('img/15BYN.jpg') no-repeat top;
     background-size: contain;
+}
+
+.about {
+    background: url(http://himiya-wordpress-5w0v9.tw1.ru/wp-content/uploads/2022/05/Дизайн-без-названия-7.png) no-repeat center, linear-gradient(180deg, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0) 66%);
+    background-position: 50%;
+    background-size: cover;
+    filter: saturate(1.08) brightness(1.13);
+
+}
+
+.about__info {
+    color: #0d2d54;
+    max-width: 45%;
+    padding: 200px 0 0 0;
+    text-align: center;
+}
+
+.about__info h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about__greetings,
+.about__name,
+.about__how-long {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 25px;
+
+}
+
+.about__name,
+.about__how-long {
+    margin: 0;
+}
+
+.about__desc {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.about__more-info {
+    max-width: 45%;
+    text-align: center;
+}
+
+.about__insta-button img {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
 }
