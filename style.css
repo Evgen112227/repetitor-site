@@ -45,8 +45,6 @@ ul {
 ._container {
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     /* border: 1px solid black; */
 }
 
@@ -280,36 +278,24 @@ ul {
 .benefits__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 5px;
+    /* margin: 0 -34px; */
 }
 
-.benefits__item-mod {
-    padding: 170px 20px 20px 20px;
-    max-width: 380px;
-    box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 30%);
-    transition: all .3s ease;
-    margin-bottom: 20px;
+.benefits__wrapper {
+    flex: 1 1 30.3333%;
+    margin: 0px 12px 14px 12px;
+    min-width: 300px;
+    box-shadow: 6px 6px 18px 0px rgb(0 0 0 / 30%);
 }
 
-.benefits__item-mod:hover {
-    transform: scale(1.1);
+
+
+.benefits__image {
+    max-width: 100%;
+    height: auto;
 }
 
-.benefits__item-one {
-    background: url('img/BYN0.jpg') no-repeat top;
-    background-size: contain;
-}
 
-.benefits__item-two {
-    background: url('img/12BYN.jpg') no-repeat top;
-    background-size: contain;
-}
-
-.benefits__item-three {
-    background: url('img/15BYN.jpg') no-repeat top;
-    background-size: contain;
-}
 
 .about {
     background: url('img/about_background.png') no-repeat center, linear-gradient(180deg, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0) 66%);
@@ -366,7 +352,6 @@ ul {
 .learning__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .learning__header {
@@ -376,9 +361,9 @@ ul {
 }
 
 .learning-block {
-    min-width: 25%;
+    flex: 1 1 31.3333%;
     text-align: center;
-    padding: 20px 15px 5px 15px;
+    margin: 12px;
     box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(158deg, #a3c9ee 21%, #8ee9fc 90%);
 }
@@ -414,4 +399,31 @@ ul {
 .advantages-item img {
     max-width: 100%;
     height: auto;
+}
+
+.feedbacks__title {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.feedbacks__slider {
+    margin: 0 auto 45px auto;
+    min-height: 400px;
+    max-width: 300px;
+    background-color: black;
+
+}
+
+.contacts__wrapper {
+    display: flex;
+}
+
+.contacts__form {
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+fieldset {
+    padding: 10px;
 }
