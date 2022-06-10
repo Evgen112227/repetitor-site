@@ -421,6 +421,7 @@ ul {
 
 .feedbacks__slides {
     width: 30%;
+    overflow: hidden;
 }
 
 .feedback__slide {
@@ -430,8 +431,8 @@ ul {
 
 .feedback__slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover
+    height: 650px;
+    object-fit: scale-down;
 }
 
 
