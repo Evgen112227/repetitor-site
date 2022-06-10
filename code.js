@@ -20,3 +20,48 @@ let marker = L.marker({
 }).addTo(map);
 
 marker.bindPopup("<b>улица Стариновская, 4</b><br>Минск, Беларусь").openPopup();
+
+
+//slider
+
+const slides = document.querySelectorAll('.feedback__slide');
+const nextButton = document.querySelector('.button-next');
+const prevButton = document.querySelector('.button-prev');
+let slideIndex = 1;
+slides.forEach(item => item.style.display = 'none');
+showSlides(1);
+
+function timer() {
+    let timerID = setInterval(() => {
+        plusSlides(1);
+    }, 5000);
+    prevButton.addEventListener('click', () => {
+        plusSlides(-1);
+        clearInterval(timerID);
+    });
+
+    nextButton.addEventListener('click', () => {
+        plusSlides(1);
+        clearInterval(timerID);
+    });
+};
+timer();
+
+
+function showSlides(n) {
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    slides.forEach(item => item.style.display = 'none');
+
+    slides[slideIndex - 1].style.display = 'block';
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}

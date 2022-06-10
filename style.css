@@ -410,11 +410,30 @@ ul {
 
 .feedbacks__slider {
     margin: 0 auto 45px auto;
-    min-height: 400px;
-    max-width: 300px;
-    background-color: black;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.feedbacks__buttons {
+    display: flex;
+}
+
+.feedbacks__slides {
+    width: 30%;
+}
+
+.feedback__slide {
+    width: 100%;
+    height: 100%;
+}
+
+.feedback__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
 
 .contacts {
     background-color: black;
