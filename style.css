@@ -43,8 +43,9 @@ ul {
 }
 
 ._container {
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px ;
     /* border: 1px solid black; */
 }
 
@@ -220,7 +221,13 @@ ul {
     background-size: cover;
     min-height: 800px;
     background-position: center;
-    padding: 150px 0 0 0;
+    padding: 100px 0 0 0;
+}
+
+
+
+.courses__wrapper{
+    width: 35%;
 }
 
 .courses__wrapper h2 {
@@ -236,10 +243,41 @@ ul {
 .courses__text {
     color: #fff;
     font-size: 26px;
-    line-height: 21px;
+    line-height: 29px;
     font-weight: 100;
     margin-bottom: 45px;
 
+}
+
+@media (max-width: 800px) {
+    .courses {
+        padding-top: 15px;
+    }
+    .courses__wrapper{
+        width: 98%;
+    }
+    .courses__wrapper h2{
+    margin-bottom: 10px;
+    }
+    .courses__text{
+    margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 465px) {
+    .courses__wrapper h2 {
+    font-size: 45px;
+    }
+}
+
+@media (max-width: 385px) {
+    .courses__wrapper h2{
+    margin-bottom: 0;
+    font-size: 35px;
+    }
+    .courses__text{
+        margin: 10px 0;
+    }
 }
 
 .button {
@@ -307,7 +345,7 @@ ul {
 
 .about__info {
     color: #0d2d54;
-    max-width: 45%;
+    max-width: 40%;
     padding: 350px 0 0 0;
     text-align: center;
 }
@@ -315,6 +353,7 @@ ul {
 .about__info h2 {
     text-transform: uppercase;
     font-weight: 700;
+    white-space: nowrap;
     font-size: 38px;
     margin-bottom: 25px;
 }
@@ -349,6 +388,26 @@ ul {
     margin: 0 auto;
 }
 
+@media (max-width: 700px) {
+    .about{
+        background: none;
+    }
+
+    .about__info{
+        padding: 70px 0 0 0;
+        max-width: 100%;
+    }
+    .about__more-info{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .about__info h2 {
+        font-size: 30px;
+    }
+}
+
 .learning__container {
     display: flex;
     flex-wrap: wrap;
@@ -363,9 +422,14 @@ ul {
 .learning-block {
     flex: 1 1 31.3333%;
     text-align: center;
+    padding: 10px;
     margin: 12px;
     box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(158deg, #a3c9ee 21%, #8ee9fc 90%);
+}
+
+.learning-block p{
+    margin-bottom: 0;
 }
 
 .advantages__wrapper {
@@ -434,6 +498,35 @@ ul {
     height: 650px;
     object-fit: scale-down;
 }
+
+@media (max-width: 1200px) {
+    .feedback__slide img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 950px) {
+    .feedback__slide img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 750px) {
+    .feedback__slide img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 320px) {
+    .feedback__slide img {
+        height: 300px;
+        object-fit: contain;
+    }
+    .feedbacks__slides {
+        width: 50%;
+    }
+}
+
 
 
 .contacts {
