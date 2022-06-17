@@ -49,6 +49,20 @@ ul {
     /* border: 1px solid black; */
 }
 
+.anchor {
+    padding-top: 11300px;
+    margin-top: -111500px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    }
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0; 
+    top: 0;  
+} 
+
 .header-top {
     background-color: #9affff;
 }
@@ -133,7 +147,6 @@ ul {
 
 .logo {
     margin: 0 55px 0 25px;
-
 }
 
 .nav {
@@ -144,7 +157,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} 
 
 .nav__item {
     margin-right: 10px;
@@ -155,6 +168,15 @@ ul {
     padding: 10px;
 }
 
+.nav__item a:hover, .nav__item a:focus{
+    color: #eb6f4a;
+}
+
+.header-bottom{
+    background-color: #fff;
+    box-shadow: 0 1px 5px -1px;
+}
+
 .header-bottom__burger-menu {
     display: none;
 }
@@ -163,8 +185,8 @@ ul {
     display: block;
     width: 50px;
     height: 5px;
-    background-color: #40d47e;
-    transition: all .7s ease-in-out;
+    background-color: #000;
+    transition: all .4s ease-in-out;
 }
 
 .header-bottom__burger-menu span:before,
@@ -172,7 +194,7 @@ ul {
     display: block;
     width: 100%;
     height: 5px;
-    background-color: #40d47e;
+    background-color: #000;
     content: "";
     transition: all .3s ease-in-out;
 }
@@ -202,19 +224,57 @@ ul {
     transform: translate(24px, 5px) rotate(-45deg);
 }
 
+#checkbox {
+    display: none;
+}
 
-
-@media all and (max-width: 750px) {
-    .nav__list {
-        display: none;
+@media (max-width: 750px) {
+    .nav{
+        position: absolute;
+        top: 115px;
+        left:0;
+        width: 100%;
     }
-
+    .nav__list {
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.5s;
+        display: block;
+    }
+    .nav__item:last-child{
+        margin-bottom: 0;
+    }
     .header-bottom__burger-menu {
         display: block;
     }
+
+    #checkbox:checked ~ .nav__list {
+        max-height: 280px;
+        padding: 15px 0;
+        transition: all 0.5s;
+        box-shadow: 0 1px 5px -1px;
+    }
 }
 
+@media (max-width: 500px){
+    .nav{
+        top:134px;
+    }
+}
+
+#checkbox:checked ~ .nav__list {
+    background-color: #fff;
+    max-height: 300px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+
 /* ________________MAIN_______________ */
+
+main{
+    margin-top: 135px;
+}
 
 .courses {
     background: linear-gradient(97deg, #000000 0%, rgba(0, 0, 0, 0) 61%), url('img/main.png') no-repeat;
@@ -223,7 +283,6 @@ ul {
     background-position: center;
     padding: 100px 0 0 0;
 }
-
 
 
 .courses__wrapper{
@@ -295,6 +354,10 @@ ul {
     text-align: center;
 }
 
+.benefits:target{
+    padding-top: 150px;
+}
+
 .benefits__title {
     color: #e580c1;
     font-weight: 700;
@@ -346,8 +409,10 @@ ul {
     background: url('img/about_background.png') no-repeat center, linear-gradient(180deg, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0) 66%);
     background-position: 50%;
     background-size: cover;
-    filter: saturate(1.08) brightness(1.13);
+}
 
+.about:target{
+    padding-top: 0px;
 }
 
 .about__info {
@@ -420,6 +485,10 @@ ul {
     flex-wrap: wrap;
 }
 
+.learning:target{
+    padding-top: 100px;
+}
+
 .learning__header {
     margin: 45px 0 45px 0;
     text-align: center;
@@ -445,6 +514,10 @@ ul {
     gap: 20px;
     padding: 0 15px;
     margin: 35px;
+}
+
+.advantages:target{
+    padding-top: 100px;
 }
 
 .advantages__header {
@@ -487,6 +560,10 @@ ul {
 .feedbacks__title {
     text-align: center;
     margin: 0 0 40px 0;
+}
+
+.feedbacks:target{
+    padding-top: 170px;
 }
 
 .feedbacks__slider {
@@ -548,6 +625,10 @@ ul {
 
 .contacts {
     background-color: black;
+}
+
+.contacts:target{
+    padding-top: 100px;
 }
 
 .contacts__wrapper {
