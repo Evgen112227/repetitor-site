@@ -289,7 +289,7 @@ main{
 
 
 .courses__wrapper{
-    width: 35%;
+    width: 39%;
 }
 
 .courses__wrapper h2 {
@@ -377,7 +377,7 @@ main{
 }
 
 .benefits:target{
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .benefits__title {
@@ -396,6 +396,7 @@ main{
     font-size: 35px;
     letter-spacing: .1em;
     line-height: 39px;
+    margin: 0 0 35px 0;
 }
 
 .benefits__container {
@@ -590,6 +591,11 @@ main{
 
 .feedbacks:target{
     padding-top: 70px;
+}
+
+.swiper-slide{
+    height: 100%;
+    
 }
 
 .image-slider {
