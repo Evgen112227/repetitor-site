@@ -23,7 +23,7 @@ new Swiper('.image-slider', {
         prevEl: '.swiper-button-prev'
     },
     autoplay: {
-        delay: 6000,
+        delay: 14000,
         disableOnInteraction: false,
         },
     grabCursor: true,

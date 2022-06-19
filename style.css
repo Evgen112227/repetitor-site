@@ -123,11 +123,11 @@ header{
 @media all and (max-width: 500px) {
     .header-top-wrapper {
         flex-direction: column;
-        padding: 10px 25px 10px 25px;
+        padding: 5px 25px 0 25px;
     }
 
     .tel {
-        margin-bottom: 25px;
+        margin-bottom: 5px;
     }
 }
 
