@@ -61,10 +61,11 @@ header{
     left: 0;
     right: 0; 
     top: 0;  
+    z-index: 999;
 } 
 
 .header-top {
-    background-color: #9affff;
+    background-color: #7df4de;
 }
 
 .header-top-wrapper {
@@ -72,12 +73,14 @@ header{
     justify-content: flex-start;
     padding: 25px;
     padding-left: 0;
+    align-items: center;
 }
 
 .tel {
     position: relative;
-    padding-left: 40px;
-    margin-right: 45px;
+    padding-left: 45px;
+    margin-right: 43px;
+    font-size: 20px;
 }
 
 .tel::before {
@@ -97,30 +100,29 @@ header{
     min-width: 200px;
 }
 
-.header-top__socials span {
+.header-top__socials span, .footer__socials span {
     display: none;
 }
 
 .header-top__socials-item1:before {
-    content: url('img/icons/facebook.png');
+    content: url('img/icons/facebook.svg');
 }
 
 .header-top__socials-item2:before {
-    content: url('img/icons/twitter.png');
+    content: url('img/icons/vk.svg');
 }
 
 .header-top__socials-item3:before {
-    content: url('img/icons/gplus.png');
+    content: url('img/icons/gplus.svg');
 }
 
 .header-top__socials-item4:before {
-    content: url('img/icons/instagramm.png');
+    content: url('img/icons/instagram.svg');
 }
 
 @media all and (max-width: 500px) {
     .header-top-wrapper {
         flex-direction: column;
-        align-items: center;
         padding: 10px 25px 10px 25px;
     }
 
@@ -264,6 +266,7 @@ header{
 
 #checkbox:checked ~ .nav__list {
     background-color: #fff;
+    opacity: .9;
     max-height: 300px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -340,18 +343,37 @@ main{
 }
 
 .button {
+    display: inline-block;
     color: #000;
     border-radius: 11px;
     font-size: 23px;
     font-weight: 500;
-    padding: 0.1em 1em;
+    padding: 5px 20px;
     line-height: 1.7em;
     background-image: linear-gradient(177deg, #7df4de 0%, #7df4de 100%);
     background-color: #7df4de;
+    animation-name: button-scaling;
+    animation-iteration-count: infinite;
+    animation-duration: 1.6s;
+    animation-timing-function: linear;
 }
+
+    @keyframes button-scaling {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
 
 .benefits {
     text-align: center;
+    margin-bottom: 45px;
 }
 
 .benefits:target{
@@ -557,71 +579,62 @@ main{
     }
 }
 
+/*------------------------------------------FEEDBACKS START--------------------------------------------*/
+
+
 .feedbacks__title {
     text-align: center;
     margin: 0 0 40px 0;
+    text-transform: uppercase;
 }
 
 .feedbacks:target{
-    padding-top: 170px;
+    padding-top: 70px;
 }
 
-.feedbacks__slider {
-    margin: 0 auto 45px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.feedbacks__buttons {
-    display: flex;
-}
-
-.feedbacks__slides {
-    width: 30%;
+.image-slider {
     overflow: hidden;
+    margin: 0 10px;
 }
 
-.feedback__slide {
-    width: 100%;
-    height: 100%;
+.image-slider__image{
+	text-align: center;
 }
 
-.feedback__slide img {
-    width: 100%;
-    height: 650px;
-    object-fit: scale-down;
+.image-slider__image img{
+	max-width: 100%;
 }
 
-@media (max-width: 1200px) {
-    .feedback__slide img {
+
+/* @media (max-width: 1200px) {
+    .image-slider__image img {
         height: 500px;
     }
 }
 
 @media (max-width: 950px) {
-    .feedback__slide img {
+    .image-slider__image img {
         height: 450px;
     }
 }
 
 @media (max-width: 750px) {
-    .feedback__slide img {
+    .image-slider__image img {
         height: 350px;
     }
-}
+} */
 
-@media (max-width: 750px) and (min-width: 320px) {
-    .feedback__slide img {
+/* @media (max-width: 750px) and (min-width: 320px) {
+    .image-slider__image img {
         height: 400px;
         object-fit: contain;
     }
     .feedbacks__slides {
         width: 65%;
     }
-}
+} */
 
-
+/*------------------------------------------FEEDBACKS END--------------------------------------------*/
 
 .contacts {
     background-color: black;
@@ -735,4 +748,18 @@ textarea {
     .contacts__wrapper{
         padding: 0;
     }
+}
+
+footer{
+    background-color: #000;
+}
+
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.footer__socials > li{
+    padding-right: 25px;
 }

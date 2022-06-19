@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
         integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
         crossorigin="" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body class="page__body" >
     <header class="header">
@@ -20,10 +20,10 @@
                 <div class="header-top-wrapper">
                     <a class="tel" href="tel:+375291661376">+37529 1661376</a>
                     <ul class="header-top__socials">
-                        <li><a class="header-top__socials-item1" href="#"><span>Facebook</span></a></li>
-                        <li><a class="header-top__socials-item2" href="#"><span>Twitter</span></a></li>
-                        <li><a class="header-top__socials-item3" href="#"><span>Gplus</span></a></li>
-                        <li><a class="header-top__socials-item4" href="#"><span>instagram</span></a></li>
+                        <li><a class="header-top__socials-item1" target="_blank" href="https://m.facebook.com/himiyadlyavseh/"><span>Facebook</span></a></li>
+                        <li><a class="header-top__socials-item2" target="_blank" href="https://vk.com/himiya_dlya_vseh"><span>VKontakte</span></a></li>
+                        <li><a class="header-top__socials-item3" href="mailto:mail@htmlacademy.ru"></a></li>
+                        <li><a class="header-top__socials-item4" target="_blank" href="https://www.instagram.com/himiya_dlya_vseh/?igshid=YmMyMTA2M2Y="><span>instagram</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                     <h2>Курсы по химии</h2>
                     <p class="courses__text">Для учеников 7-11 классов</p>
                     <p class="courses__text">Открыта запись на 2022-23 учебный год</p>
-                    <button class="button">Записаться</button>
+                    <a href="https://docs.google.com/forms/d/1UtX9g3f48GH_FBOwgiOTfAnkJHj6qoLTgZc_Zptk_Zo/edit" target="_blank" class="button">Записаться</a>
                 </div>
             </div>
         </section>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="about__more-info">
                     <p>Больше информации в моём Instagram</p>
-                    <a class="about__insta-button" href="#">
+                    <a class="about__insta-button" target="_blank" href="https://www.instagram.com/himiya_dlya_vseh/?igshid=YmMyMTA2M2Y=">
                         <img src="img/icons/about__insta.png" alt="instagram button" width="60" height="60">
                     </a>
                 </div>
@@ -208,78 +208,73 @@
             </div>
         </section>
         <section class="feedbacks" id="feedbacks">
-            <div class="_container">
-                <h2 class="feedbacks__title">ОТЗЫВЫ</h2>
-                <div class="feedbacks__slider">
-                    <div class="feedbacks__buttons">
-                        <div class="button-prev">
-                            <img src="img/slides/previous-button.png" alt="">
-                        </div>
-                        <div class="button-next">
-                            <img src="img/slides/next-button.png" alt="">
-                        </div>
-                    </div>
-                    <div class="feedbacks__slides">
-                        <div class="feedback__slide">
+            <h1 class="feedbacks__title">Отзывы</h1>
+            <div class="image-slider swiper-container">
+                <div class="image-slider__wrapper swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-slider__slide image-slider__image">
                             <img src="img/slides/1.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/2.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/3.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/4.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/5.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/6.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/7.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/8.jpg" alt="">
                         </div>
-                        <div class="feedback__slide">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
                             <img src="img/slides/9.jpg" alt="">
                         </div>
                     </div>
+                    
                 </div>
-
+                <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
             </div>
-        </section>
-        <section class="contacts" id="contacts">
-            <div class="_container">
-                <h2>Контакты</h2>
-                <div class="contacts__wrapper">
-                    <div class="contacts__column1">
-                        <form class="contacts__form" method="POST">
-                            <legend>Связаться</legend>
-                            <div class="contacts__2-columns">
-                                <input type="text" name="name" placeholder="Имя">
-                                <input type="text" name="tel" placeholder="Телефон">
-                            </div>
-                            <input class="contacts__mail" type="text" name="mail" placeholder="Электронный адрес">
-                            <textarea cols="20" rows="10" placeholder="Сообщение"></textarea>
-
-                            <input type="submit" value="Отправить">
-                        </form>
-                    </div>
-                    <div class="contacts__column2">
-                        <div class="contacts__map" id="map"></div>
-                        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-                            integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-                            crossorigin=""></script>
-                    </div>
-                </div>
-            </div>
+            
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="_container">
+            <ul class="footer__socials">
+                <li><a class="header-top__socials-item1" target="_blank" href="https://m.facebook.com/himiyadlyavseh/"><span>Facebook</span></a></li>
+                <li><a class="header-top__socials-item2" target="_blank" href="https://vk.com/himiya_dlya_vseh"><span>VKontakte</span></a></li>
+                <li><a class="header-top__socials-item3" href="mailto:katya_krochkovskaya@mail.ru"></a></li>
+                <li><a class="header-top__socials-item4" target="_blank" href="https://www.instagram.com/himiya_dlya_vseh/?igshid=YmMyMTA2M2Y="><span>instagram</span></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="code.js"></script>
 </body>
 
