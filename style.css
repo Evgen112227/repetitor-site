@@ -233,7 +233,7 @@ header{
 @media (max-width: 750px) {
     .nav{
         position: absolute;
-        top: 115px;
+        top: 124px;
         left:0;
         width: 100%;
     }
@@ -260,7 +260,7 @@ header{
 
 @media (max-width: 500px){
     .nav{
-        top:134px;
+        top:108px;
     }
 }
 
@@ -757,7 +757,7 @@ footer{
 .footer__socials{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 15px;
 }
 
 .footer__socials > li{
